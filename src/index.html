@@ -5,29 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
   <title>Synth</title>
 </head>
 
 <body>
   <div id="playStopButton"></div>
   <div id="oscillator">
-    <div>
+    <div class="osc-param">
       <p>Wave form:</p>
       <div id="oscWaveFormSelect" nexus-ui="select"></div>
     </div>
-    <div>
+    <div class="osc-param">
+      <p>Frequency:</p>
       <div id="oscFreqDial" nexus-ui="dial"></div>
       <div id="oscFreqNumber" nexus-ui="number"></div>
-      <p>Frequency</p>
     </div>
-    <div>
+    <div class="osc-param">
+      <p>Detune:</p>
       <div id="oscDetuneDial" nexus-ui="dial"></div>
       <div id="oscDetuneNumber" nexus-ui="number"></div>
-      <p>Detune</p>
     </div>
-    <div>
+    <div class="osc-param">
+      <p>Mute:</p>
       <div id="oscMuteButton" nexus-ui="button"></div>
-      <p>Mute</p>
     </div>
     <div id="oscilloscope"></div>
   </div>
