@@ -10,6 +10,7 @@ document
   ?.addEventListener("click", async () => {
     await Tone.start();
   });
+playStopButton.text = "Start";
 
 const oscillatorRack = new Nexus.Rack("#oscillator");
 
@@ -41,6 +42,7 @@ oscillatorRack.oscDetuneNumber.colorize("fill", "#d4d4d4");
 
 oscillatorRack.oscMuteButton.mode = "toggle";
 oscillatorRack.oscMuteButton.state = "true";
+oscillatorRack.oscMuteButton.resize(40, 40);
 oscillatorRack.oscMuteButton.colorize("fill", "#d4d4d4");
 
 const oscillator = new Tone.Oscillator({

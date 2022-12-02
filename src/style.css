@@ -13,13 +13,13 @@ html {
 select {
   font-family: Quicksand;
   font-weight: 300;
+  padding-left: 8px;
 }
 
 input {
   font-family: Quicksand !important;
   font-weight: 300 !important;
   text-align: center;
-  padding-left: 8px;
 }
 
 p {
