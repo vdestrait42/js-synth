@@ -56,11 +56,17 @@ oscillatorRack.oscWaveFormSelect.on("change", (option) => {
 });
 
 oscillatorRack.oscFreqDial.on("change", (value) => {
-  oscillator.frequency.setValueAtTime(value, Tone.getContext().currentTime);
+  oscillator.frequency.exponentialRampToValueAtTime(
+    value,
+    Tone.getContext().currentTime + 0.05
+  );
 });
 
 oscillatorRack.oscDetuneDial.on("change", (value) => {
-  oscillator.detune.setValueAtTime(value, Tone.getContext().currentTime);
+  oscillator.detune.exponentialRampToValueAtTime(
+    value,
+    Tone.getContext().currentTime + 0.05
+  );
 });
 
 oscillatorRack.oscMuteButton.on("change", (state) => {
